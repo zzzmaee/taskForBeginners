@@ -1,7 +1,9 @@
-<ul>
-	<li>ID: {{ user?.id }}</li>
-	<li>Name: {{ user?.name }}</li>
-	<li>Email: {{ user?.email }}</li>
-	<li>Username: {{ user?.username }}</li>
-	<button type="button" (click)="deleteUser(user?.id)">Удалить</button>
-</ul>
+<div class="user-card">
+  <div><span>id:</span> {{ user?.id }}</div>
+  <div><span>Name:</span> {{ user?.name }}</div>
+  <div><span>Email:</span> {{ user?.email }}</div>
+  <div><span>Username:</span> {{ user?.username }}</div>
+  <br>
+  <button (click)="deleteUser(user?.id)" type="button">Удалить</button>
+</div>
+

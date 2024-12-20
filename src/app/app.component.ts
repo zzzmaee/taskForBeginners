@@ -1,5 +1,5 @@
-import { Component } from '@angular/core'
-import { Router, RouterLink, RouterOutlet } from '@angular/router'
+import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 
 @Component({
@@ -10,8 +10,4 @@ import { Router, RouterLink, RouterOutlet } from '@angular/router'
 	templateUrl: './app.component.html'
 })
 export class AppComponent {
-	constructor(private router: Router) {}
-	goToHome() {
-		this.router.navigate(['/']);
-	}
 }
